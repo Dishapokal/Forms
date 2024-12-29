@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, #ccbcdc, #57719f);
+            font-family: Arial, sans-serif;
+        }
+
+        .contact-container {
+            display: flex;
+            margin:3rem;
+            flex-wrap: wrap;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .contact-form {
+            flex: 2;
+            padding: 20px;
+        }
+
+       
+        .contact-form h2 {
+            margin-left:17px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+           background-color: #4e5a67;
+            color: rgb(253, 241, 241);
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+        .contact-info {
+            flex: 1;
+            background: #4e5a67;
+            color: white;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+        .contact-info h2{
+            
+            color: #e5eaf5;
+            font-weight: bold;
+        }
+        .contact-info p {
+             margin: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+           
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 998px) {
+            body {
+                padding: 24px;
+            }
+
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .contact-info {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-form h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 576px) {
+            body {
+                padding: 14px;
+            }
+
+            .contact-form h2 {
+                font-size: 1.2em;
+            }
+
+            .btn {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Send us a message</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name </label>
+                    <input type="text" id="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email </label>
+                    <input type="email" id="email" placeholder="Your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Phone #">
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" placeholder="Company name">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message </label>
+                    <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>9757 Aspen Lane South Richmond Hill, NY 11419</p>
+            <p>+1 (291) 939 9321</p>
+            <p><a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
